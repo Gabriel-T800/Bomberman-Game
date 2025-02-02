@@ -1,0 +1,50 @@
+Descrição do Trabalho Final: Bomberman Simplificado
+
+Autores: Gabriel Torres e Guilherme Prados
+
+Este projeto consiste em uma versão simplificada do clássico jogo Bomberman, desenvolvido em C com o uso da biblioteca gráfica Raylib. O objetivo é proporcionar uma experiência de jogo divertida e nostálgica, com elementos básicos como colocação de bombas, destruição de blocos, coleta de chaves para passar de nível e inimigos com movimentação (razoavelmente) inteligente.
+
+Este jogo foi projetado para fins acadêmicos e apresenta uma interface gráfica simples, mas funcional, ideal para explorar conceitos de programação de jogos, como manipulação de arquivos de texto e binário, eventos do teclado, inteligência artificial (rudimentar) para inimigos e gerenciamento de colisões.
+
+Basta abrir o arquivo executável "Bomberman.exe" para jogar, contanto que tenhas baixado os demais arquivos necessários.
+Os mapas podem ser editados pelo usuário antes de jogar, podendo criar inclusive mais mapas para jogar.
+
+Controles do Jogo:
+
+Teclas de movimentação: Use as setas do teclado para mover o personagem de forma rápida (movimento por segurar a tecla) ou use as teclas WSAD para mover o personagem bloco a bloco (movimento por cliques).
+
+Posicionamento de bombas: Pressione a tecla B para plantar uma bomba em frente ao jogador, conforme a última direção de movimento registrada.
+- Caso não seja possível adicionar a bomba de modo que atinga o bloco/inimigo desejado em frente, tecle E + B para posicionar a bomba na posição do jogador. A bomba não aparece nesse caso, mas explode após os 3 segundos normalmente, então saia da área da explosão.
+
+Tecle TAB para abrir o MENU do jogo, e posteriormente tecle a letra correspondente para o comando desejado.
+
+Funcionamento do Jogo:
+
+O limite de FPS é de 60, podendo oscilar para valores ligeiramente menores.
+
+As bombas levam 3 segundos para explodir. Sua explosão ocorre em forma de cruz, com raio de explosão de 2 blocos em cada direção, mas não aparece na tela.
+
+Explosão e inimigos causam dano ao jogador, então tomem cuidado com eles.
+
+Perder mais do que 5 vidas reinicia o jogo.
+
+Colete 5 chaves, ocultas em alguns dos baús (blocos beges) para passar de nível.
+
+Os inimigos possuem física completa também, impedindo que estes peguem chaves ou se atravessem entre si.
+
+Pontuação:
++10 pontos por bloco destruído
++20 pontos por inimigo morto
++200 pontos por passagem de nível
+-100 pontos por vida perdida
+Pontuação não se reduz abaixo de 0.
+
+Observação:
+
+Caso encontre problemas na execução, verifique:
+
+Se todos os arquivos de dependência do projeto estão no mesmo diretório.
+
+Se a versão do compilador é compatível com a Raylib.
+
+Aproveite o jogo!

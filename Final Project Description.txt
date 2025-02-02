@@ -1,0 +1,45 @@
+Final Project Description: Simplified Bomberman
+
+Authors: Gabriel Torres and Guilherme Prados
+
+This project is a simplified version of the classic Bomberman game, developed in C using the Raylib graphics library. The goal is to provide a fun and nostalgic gaming experience with basic elements such as bomb placement, block destruction, key collection to progress through levels, and (reasonably) intelligent enemy movement.
+
+This game was designed for academic purposes and features a simple yet functional graphical interface, ideal for exploring game programming concepts such as text and binary file manipulation, keyboard event handling, rudimentary AI for enemies, and collision management.
+
+To play, simply open the executable file "Bomberman.exe", ensuring that you have downloaded all the necessary files.
+Maps can be edited by the user before playing, allowing the creation of additional levels.
+
+Game Controls:
+Movement keys: Use the arrow keys to move the character quickly (continuous movement while holding the key) or use WSAD to move block by block (step-by-step movement).
+
+Placing bombs: Press B to plant a bomb in front of the player, following the last recorded movement direction.
+If it is not possible to place the bomb in a way that hits the desired block/enemy in front, press E + B to position the bomb at the player's current location. The bomb will not appear in this case, but it will explode normally after 3 seconds, so move away from the explosion area.
+
+Press TAB to open the game menu, then press the corresponding letter for the desired command.
+
+Game Mechanics:
+The FPS limit is 60, with possible slight drops.
+
+Bombs take 3 seconds to explode. The explosion occurs in a cross pattern, with a blast radius of 2 blocks in each direction, but the explosion itself does not appear on the screen.
+
+Explosions and enemies deal damage to the player, so be cautious.
+
+Losing more than 5 lives resets the game.
+
+Collect 5 keys, hidden in some of the beige chests (blocks), to advance to the next level.
+
+Enemies have full physics, preventing them from picking up keys or passing through each other.
+
+Scoring System:
++10 points per destroyed block
++20 points per defeated enemy
++200 points for level progression
+-100 points per lost life
+The score does not go below 0.
+
+Note:
+If you encounter issues while running the game, check:
+
+If all project dependency files are in the same directory.
+If the compiler version is compatible with Raylib.
+Enjoy the game!
